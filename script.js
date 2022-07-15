@@ -14,12 +14,7 @@ const gamePlay = () => {
     document.addEventListener( "click", someListener );
     let turnelement = document.querySelector('.getturn')
     let countClicks = 0;
-    
-    if (countClicks = countClicks%2 == 1){
-        turnelement.textContent - ('Player x turn')
-    } else if(countClicks%2 == 0 ){
-        turnelement.textContent - ('Player o turn')
-    } else{}
+    console.log(turnelement)
 
     function someListener(event){
         var element = event.target;
@@ -31,10 +26,12 @@ const gamePlay = () => {
             } else if(countClicks%2 == 1 && element.textContent == ""){
                 countClicks++;
             element.textContent = ('x')
+            turnelement.textContent = ('Player o turn')
             console.log(countClicks)
             } else if(countClicks%2 == 0 && element.textContent == ""){
                 countClicks++;
             element.textContent = ('o')
+            turnelement.textContent = ('Player x turn')
             console.log(countClicks)
             } else{}
         } else{}
