@@ -50,7 +50,10 @@ body{
   border-left: var(--border);
 }
 
-
+.getturn{
+    margin: 20px;
+    font-size: 36px;
+}
 
 
 /* footer */
